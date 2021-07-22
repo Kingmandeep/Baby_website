@@ -1,23 +1,24 @@
 import React from 'react'
-import Main from './Main'
-import { Route, Switch } from 'react-router-dom';
-import Firstpage from './Firstpage';
-
+import About from './About'
+import Decorate from './Decorate'
+import Footerf from './Footerf'
+import Footerl from './Footerl'
+// import Header from './Header'
+import HeaderTop from './HeaderTop'
+import Ratedproducts from './Ratedproducts'
 
 const App = () => {
     return (
-        <>
-            <Switch>
-                <Route exact path='/' component={Firstpage} />
-                <Route exact path='/main' component={Main} />
-            </Switch>
+        <div>
+            <HeaderTop/>
+            {/* <Header/> */}
+            <About/>
+            <Decorate/>
+            <Ratedproducts/>
 
-
-
-            {/* <Firstpage/> */}
-            {/* <Main /> */}
-            {/* <Pokemons/> */}
-        </>
+            <Footerf/>
+            <Footerl/>
+        </div>
     )
 }
 export default App;
